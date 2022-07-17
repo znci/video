@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://branding.znci.dev/css/index.css">
+	<style>
+		body {
+			margin: 0px 0px;
+			padding: 0px 0px;
+		}
+		#container {
+			margin: 0px auto;
+			width: 500px;
+		}
+		#videoElement {
+			width: 500px;
+			height: 282px;
+		}
+		#container .overlay {
+			position: absolute;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			transition: transform 0.25s ease-in-out;
+		}
+		#container .overlay img {
+			border-radius: 50%;
+			width: 32px;
+			height: 32px;
+		}
+		#container .overlay .username {
+			font-family: "Assistant";
+			font-size: 1.2rem;
+			font-weight: 300;
+			height: fit-content;
+			margin-left: 8px;
+		}
+		#container .overlay .username-streaming {
+			font-family: "Assistant";
+			font-size: 1.2rem;
+			font-weight: 300;
+			height: fit-content;
+			margin-left: 8px;
+			margin-top: -5px;
+		}
+		#container .overlay .streamingMessageOverlay {
+			font-size: 14px;
+  			margin-top: -4px;
+			display: flex;
+			transition: transform 250ms;
+		}
+	</style>
+</head>
+	<body>
+	<div id="container">
+		<div class="overlay" id="overlay">
+			<img src="https://cdn.discordapp.com/avatars/830896825888276560/5c49df97db43e3bbf57aec7cb95093cb.webp?size=64" alt="chxll" class="profilepic">
+			<div id="usernameoverlay" class="username">
+				chxll
+				<span class="streamingMessageOverlay">Streaming</span>
+			</div>
+			<button onclick="toggleStream()">Toggle Stream</button>
+		</div>
+		<video autoplay="true" id="videoElement"></video>
+	</div>
+	<script src="js/webcam_stream.js"></script>
+</body>
+</html>

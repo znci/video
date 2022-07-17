@@ -1,0 +1,56 @@
+:root {
+	--accent-color: #FF3945;
+	--background-color: #1F1F28;
+	--container-color: #222237;
+	--navbar-color: #333745;
+}
+* {
+	box-sizing:border-box
+}
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+.container {
+	background-color: var(--container-color);
+}
+.navbar {
+	background-color: var(--navbar-color);
+}
+.toggleStream {
+	position: absolute;
+	background-color: var(--container-color);
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	bottom: -250%;
+	left: 175%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login {
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	height: 500px;
+	transform: translate(-50%,30%);
+	color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+}
+button {
+	border-radius: 20px;
+	width: 100%;
+	background-color: var(--navbar-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Assistant",sans-serif;
+}
+button span.text {
+	display: flex;
+	gap: 10px;
+}

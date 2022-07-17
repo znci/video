@@ -30,7 +30,7 @@ module.exports = function(app){
 			var ip_last_4 = ip.split('.').slice(-4).join('.');
 
 			
-			console.log(`NEW STREAM: IP (last 4 bcs chxll is broke and doesnt know how to use a vpn): ${ip_last_4} ID: ${stream_id}`);
+			console.log(`NEW STREAM: IP: ${ip_last_4} ID: ${stream_id}`);
 		}
 		, function(err) {
 			console.log("Error: " + err);
@@ -43,7 +43,7 @@ module.exports = function(app){
 		var stream_id = req.query.id;
 		var ip = req.connection.remoteAddress;
 		var ip_last_4 = ip.split('.').slice(-4).join('.');
-		console.log(`GET STREAM: IP (last 4 bcs chxll is broke and doesnt know how to use a vpn): ${ip_last_4} ID: ${stream_id}`);
+		console.log(`GET STREAM: IP: ${ip_last_4} ID: ${stream_id}`);
 		res.render('', {
 			title: 'Stream',
 			video_stream: true,
@@ -54,7 +54,7 @@ module.exports = function(app){
 		var stream_id = req.query.id;
 		var ip = req.connection.remoteAddress;
 		var ip_last_4 = ip.split('.').slice(-4).join('.');
-		console.log(`STOP STREAM: IP (last 4 bcs chxll is broke and doesnt know how to use a vpn): ${ip_last_4} ID: ${stream_id}`);
+		console.log(`STOP STREAM: IP ${ip_last_4} ID: ${stream_id}`);
 		res.render('', {
 			title: 'Stream',
 			video_stream: true,

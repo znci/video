@@ -1,0 +1,61 @@
+body {
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+#container {
+	margin: 0px auto;
+	width: 500px;
+}
+#videoElement {
+	width: 500px;
+	height: 282px;
+	max-width: 500px;
+	max-height: 282px;
+}
+#container .overlay {
+	position: absolute;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	transition: transform 0.25s ease-in-out;
+}
+#container .overlay img {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+#container .overlay .username {
+	font-family: "Assistant";
+	font-size: 1.2rem;
+	font-weight: 300;
+	height: fit-content;
+	margin-left: 8px;
+}
+#container .overlay .username-streaming {
+	font-family: "Assistant";
+	font-size: 1.2rem;
+	font-weight: 300;
+	height: fit-content;
+	margin-left: 8px;
+	margin-top: -5px;
+}
+#container .overlay .streamingMessageOverlay {
+	font-size: 14px;
+	margin-top: -4px;
+	display: flex;
+	animation: fadeIn 0.5s linear;
+	position: absolute;
+}
+@keyframes fadeIn {
+	from {
+		visibility: hidden;
+	}
+	to {
+		visibility: visible;
+	}
+}
+.svg-camera {
+	height: 32px;
+	width: 32px;
+	color: #fff;
+}

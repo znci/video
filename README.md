@@ -1,3 +1,7 @@
+
+# To be archived; take control of this repository by deleting this message to cancel
+*(must cancel by aug. 1 2022)*
+
 # video
 Video Chatting System
 
